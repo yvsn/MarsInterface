@@ -3,6 +3,7 @@
 <head>
 <title></title>
 	<meta charset="UTF-8" />
+	<meta name = "viewport" content= "width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
 			<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 			<script src="https://kit.fontawesome.com/ef1c27da98.js" crossorigin="anonymous"></script>
@@ -11,11 +12,11 @@
 <body>
 	<div class= "wrapper">
 		<header>
-			<div class= "logo">Logo</div>
+			<div class= "logo">SPACEX ITSI</div>
 				<nav>
 					<ul>
-						<li><a href= "index.html" class="activepage">Home</a></li>
-						<li><a href= "#">Parameters</a></li>
+						<li><a href= "index.html">Home</a></li>
+						<li><a href= "" class="activepage">Time Calculator</a></li>
 						<li><a href= "#">Environment</a></li>
 						<li><a href= "#">Supplies</a></li>
 						<li><a href= "#">Metrics</a></li>
@@ -24,17 +25,23 @@
 					<div class= "menu-toggle"><i class="fas fa-bars"></i></div>
 		</header>
 	</div>
-
-	<div class= "calculator1">
-	<input id="text1" placeholder= "Current Speed(km/h)">
-	<input id="text2" placeholder= "Distance Remaining(km)">
-	<button onclick="time()" id= "btn1">CLICK ME</button>
-</div>
-
-<div class= "calculator2">
-<input id="text6" placeholder= "Distance(km)">
-<button onclick="gPull()" id= "btn2">CLICK</button>
-</div>
+	<section>
+		<section class= timecalculatorsection>
+	<div class= "timecalculatortext">
+		<h1>Time calculator</h1>
+		<h2> With the calculator below you can calculate the time it takes for you to get to Mars.<h2>
+		<h2>All you have to do is type in how fast you are moving towards Mars (in km/h) and how far away you are from Mars (in km).<h2>
+	</div>
+		</section>
+	<section class= "calculatorsection">
+		<div class= "calculatorcontainer">
+		<div class= "calculator2">
+			<input id="text1" placeholder= "Current Speed(km/h)">
+			<input id="text2" placeholder= "Distance Remaining(km)">
+			<button class ="btn1" onclick="time()" id= "btn1">Calculate</button>
+		</div>
+		</div>
+	</section>
 
 </body>
 </html>
