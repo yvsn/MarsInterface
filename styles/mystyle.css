@@ -1,9 +1,9 @@
 *{
-		box-sizing: border-box;
+	box-sizing: border-box;
 }
 html,body{
-margin: 0px;
-padding: 0px;
+	margin: 0px;
+	padding: 0px;
 	background-image: url(../images/theskyb.jpg);
 }
 header{
@@ -64,27 +64,27 @@ header nav ul li a.activepage{
 	header{
 	padding: 0 40px
 }
-	.menu-toggle{
+.menu-toggle{
 	display: block;
 }
-	header nav{
-		position:absolute;
-		width: 100%;
-		height: calc(100vh + 50px);
-		background: #919191;
-		top:50px;
-		right: 100%;
-		transition: 0.5s;
+header nav{
+	position:absolute;
+	width: 100%;
+	height: calc(100vh + 50px);
+	background: #919191;
+	top:50px;
+	right: 100%;
+	transition: 0.5s;
 	}
-	header nav.active{
-		right: 0;
+header nav.active{
+	right: 0;
 	}
-		header nav ul{
-		display: block;
-		text-align: center;
+header nav ul{
+	display: block;
+	text-align: center;
 }
 header nav ul li a{
-border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 }
 h1{
@@ -113,21 +113,21 @@ h3{
 }
 .textcalculatorsection, .introsection{
 	margin-top: 12rem;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		padding-bottom: 5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding-bottom: 5rem;
 }
 .introduction, .timecalculatortext{
 	width: 80%;
 
 }
 .introduction h1{
-padding-bottom: 0.3rem;
+	padding-bottom: 0.3rem;
 }
-.timecalculatortext h1{
-padding-bottom: 0.3rem;
+.calculatortext h1{
+	padding-bottom: 0.3rem;
 }
 .calculatorsection{
 	display: flex;
@@ -138,13 +138,13 @@ padding-bottom: 0.3rem;
 
 }
 .calculatorcontainer{
-background-color: #919191;
-padding-left: 12rem;
-padding-right: 12rem;
-padding-top: 5rem;
-padding-bottom: 5rem;
-border-radius: 25px;
-box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
+	background-color: #919191;
+	padding-left: 12rem;
+	padding-right: 12rem;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	border-radius: 25px;
+	box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
 }
 input{
 	height:5vh;
@@ -157,8 +157,8 @@ input{
 	height: 5vh;
 	width: auto;
 	font-size: 1.2em;
-margin: 4px 2px;
-cursor: pointer;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 .displayresult{
 	margin-top: 1rem;
@@ -169,14 +169,13 @@ cursor: pointer;
 	display:flex;
 	justify-content: center;
 	flex-direction: column;
-
 }
 .displayresult li{
-list-style: none;
-font-family: 'Open Sans', sans-serif;
-font-weight: normal;
-margin: 0;
-padding-top: 5px;
-font-size: 1.2em;
-color: white;
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 5px;
+	font-size: 1.2em;
+	color: white;
 }
