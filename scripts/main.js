@@ -4,8 +4,8 @@ const menuToggle = document.querySelector(".menu-toggle");
     menuToggle.addEventListener("click", () => {
       if (nav.className != "active") {
         nav.className = "active";}
-        else {
-        nav.className = "";}
+          else {
+            nav.className = "";}
 }
 );
 
@@ -16,7 +16,7 @@ function time (){
       var totalDays = Math.round(distance/ speed /24);
         var totalMonths = Math.round(distance/ speed/ 744);
           document.getElementById("displayresulttext").innerHTML = totalDays + " day(s) or " + totalMonths + " month(s) until arrival on Mars.";
-}
+};
 //Function Food Calculator
 function food (){
   var fooddaily = 1.8;
@@ -30,28 +30,42 @@ if (foodcalc >= fooddaily) {
     else{
         document.getElementById("displayresulttext2").innerHTML = "You only have " + foodcalc + " kilogramm(s) of food per day left" + " (You have to ration your food).";
 }
-}
+};
 //Event Atmosphere Mars
 document.getElementById("btn3").onclick = function(){
-  var marsCD= "Carbon Dioxide: 95,32%";
-    var marsMN= "Molecular Nitrogen: 2.6%";
-      var marsA= "Argon: 1,9%";
-        var marsO= "Other Elements: 0.18%";
-          document.getElementById("marsCD").innerHTML = marsCD;
-            document.getElementById("marsMN").innerHTML = marsMN;
-              document.getElementById("marsA").innerHTML = marsA;
-                document.getElementById("marsO").innerHTML = marsO;
+  var toggle=document.getElementById("displaytoggle");
+    if (toggle.style.display === "block") {
+      toggle.style.display = "none";
 }
+        else {
+          toggle.style.display = "block";
+}
+            var marsCD= "Carbon Dioxide: 95,32%";
+              var marsMN= "Molecular Nitrogen: 2.6%";
+                var marsA= "Argon: 1,9%";
+                  var marsO= "Other Elements: 0.18%";
+                    document.getElementById("marsCD").innerHTML = marsCD;
+                      document.getElementById("marsMN").innerHTML = marsMN;
+                        document.getElementById("marsA").innerHTML = marsA;
+                          document.getElementById("marsO").innerHTML = marsO
+};
 //Event Atmosphere Earth
 document.getElementById("btn4").onclick = function(){
-  var earthN= "Nitrogen: 78.09%";
-    var earthOX= "Oxygen: 20,95%";
-      var earthA= "Argon: 1,9%";
-        var earthCD= "Carbon Dioxide: 0.04%"
-          var earthO= "Other Elements: 0.18%";
-            document.getElementById("earthN").innerHTML = earthN;
-              document.getElementById("earthOX").innerHTML = earthOX;
-                document.getElementById("earthA").innerHTML = earthA;
-                  document.getElementById("earthCD").innerHTML = earthCD;
-                    document.getElementById("earthO").innerHTML = earthO;
+  var toggle2=document.getElementById("displaytoggle2");
+    if (toggle2.style.display === "block") {
+      toggle2.style.display = "none";
 }
+        else {
+          toggle2.style.display = "block";
+}
+            var earthN= "Nitrogen: 78.09%";
+              var earthOX= "Oxygen: 20,95%";
+                var earthA= "Argon: 1,9%";
+                  var earthCD= "Carbon Dioxide: 0.04%"
+                    var earthO= "Other Elements: 0.18%";
+                      document.getElementById("earthN").innerHTML = earthN;
+                        document.getElementById("earthOX").innerHTML = earthOX;
+                          document.getElementById("earthA").innerHTML = earthA;
+                            document.getElementById("earthCD").innerHTML = earthCD;
+                              document.getElementById("earthO").innerHTML = earthO;
+};
