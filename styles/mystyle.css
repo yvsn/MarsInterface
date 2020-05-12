@@ -16,7 +16,7 @@ header{
 	min-height: 50px;;
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
-	font-size: 2vh;
+	font-size: 1em;
 }
 header .logo{
 	color: white;
@@ -99,11 +99,19 @@ h2{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: normal;
 	margin: 0;
-	padding: 0;
+	padding-top:20px;
 	font-size: 3em;
 	color: white;
 }
-.timecalculatorsection, .introsection{
+h3{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	color: white;
+}
+.textcalculatorsection, .introsection{
 	margin-top: 12rem;
 		display: flex;
 		align-items: center;
@@ -124,6 +132,7 @@ padding-bottom: 0.3rem;
 .calculatorsection{
 	display: flex;
 	justify-content: center;
+	flex-direction: row;
 	align-items: center;
 	padding-bottom: 5rem;
 
@@ -134,13 +143,40 @@ padding-left: 12rem;
 padding-right: 12rem;
 padding-top: 5rem;
 padding-bottom: 5rem;
+border-radius: 25px;
+box-shadow: 0px 2px 15px rgba(255, 255, 255, 0.6);
 }
 input{
-	height:40px;
+	height:5vh;
 	width: auto;
-	font-size: 20px;
+	font-size: 1.2em;
 }
-.btn1{
-	height: 40px;
+.btn1, .btn2, .btn3, .btn4{
+	margin: 0;
+	padding: 0;
+	height: 5vh;
 	width: auto;
+	font-size: 1.2em;
+margin: 4px 2px;
+cursor: pointer;
+}
+.displayresult{
+	margin-top: 1rem;
+}
+.displayresult ul{
+	padding: 0;
+	margin: 0;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+
+}
+.displayresult li{
+list-style: none;
+font-family: 'Open Sans', sans-serif;
+font-weight: normal;
+margin: 0;
+padding-top: 5px;
+font-size: 1.2em;
+color: white;
 }

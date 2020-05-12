@@ -1,22 +1,53 @@
 function time (){
 
-var number1 = document.getElementById('text1').value;
-var number2 = document.getElementById('text2').value;
-var totalDays = Math.round(number2/ number1 /24);
-var totalMonths = Math.round(number2/ number1/ 744);
-alert(totalDays + " day(s) until arrival or " + totalMonths + " month(s) until arrival.");
+var speed = document.getElementById('text1').value;
+var distance = document.getElementById('text2').value;
+var totalDays = Math.round(distance/ speed /24);
+var totalMonths = Math.round(distance/ speed/ 744);
+document.getElementById("displayresulttext").innerHTML = totalDays + " day(s) or " + totalMonths + " month(s) until arrival on Mars."
 }
 
-function gPull (){
 
-var number3 = Math.pow(6.67 * 10, -11);
-var number4 = Math.pow(6.39 * 10, 23);
-var number5 = 4535924;
-var number6 = document.getElementById('text6').value;
-var number7 = Math.pow(number6, 2);
-var totalPull = number3 * number4 * number5 / number7;
-alert("At a distance of " + number6 + "km, the gravitational pull between the SpaceX starship and Mars is " + totalPull +"g" );
+
+function food (){
+var fooddaily = 1.8;
+var foodleft = document.getElementById('textfood').value;
+var timeleft = document.getElementById('texttime').value;
+var foodcalc = foodleft/ timeleft;
+
+if (foodcalc >= fooddaily) {
+  document.getElementById("displayresulttext2").innerHTML = "You still have " + foodcalc + " kilogramm(s) of food per day left" + " (You don't have to ration your food).";
 }
+else{
+    document.getElementById("displayresulttext2").innerHTML = "You still have " + foodcalc + " kilogramm(s) of food per day left" + " (You have to ration your food).";
+}
+}
+
+document.getElementById("btn3").onclick = function(){
+  var marsCD= "Carbon Dioxide: 95,32%";
+var marsMN= "Molecular Nitrogen: 2.6%";
+var marsA= "Argon: 1,9%";
+var marsO= "Other Elements: 0.18%";
+    document.getElementById("marsCD").innerHTML = marsCD;
+    document.getElementById("marsMN").innerHTML = marsMN;
+    document.getElementById("marsA").innerHTML = marsA;
+    document.getElementById("marsO").innerHTML = marsO;
+}
+
+
+document.getElementById("btn4").onclick = function(){
+var earthN= "Nitrogen: 78.09%";
+var earthOX= "Oxygen: 20,95%";
+var earthA= "Argon: 1,9%";
+var earthCD= "Carbon Dioxide: 0.04%"
+var earthO= "Other Elements: 0.18%";
+    document.getElementById("earthN").innerHTML = earthN;
+    document.getElementById("earthOX").innerHTML = earthOX;
+    document.getElementById("earthA").innerHTML = earthA;
+    document.getElementById("earthCD").innerHTML = earthCD;
+    document.getElementById("earthO").innerHTML = earthO;
+}
+
 
 const menuToggle = document.querySelector('.menu-toggle');
        const nav = document.querySelector('nav');

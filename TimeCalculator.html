@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title></title>
+<title>Time Calculator</title>
 	<meta charset="UTF-8" />
 	<meta name = "viewport" content= "width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
@@ -16,30 +16,30 @@
 				<nav>
 					<ul>
 						<li><a href= "index.html">Home</a></li>
-						<li><a href= "" class="activepage">Time Calculator</a></li>
-						<li><a href= "#">Environment</a></li>
-						<li><a href= "#">Supplies</a></li>
-						<li><a href= "#">Metrics</a></li>
+						<li><a href= "TimeCalculator.html" class="activepage">Time Calculator</a></li>
+						<li><a href= "Foodcalculator.html">Food Calculator</a></li>
+						<li><a href= "Atmosphere.html">Atmosphere</a></li>
 					</ul>
 				</nav>
 					<div class= "menu-toggle"><i class="fas fa-bars"></i></div>
 		</header>
 	</div>
 	<section>
-		<section class= timecalculatorsection>
+		<section class= textcalculatorsection>
 	<div class= "timecalculatortext">
-		<h1>Time calculator</h1>
+		<h1>Time Calculator</h1>
 		<h2> With the calculator below you can calculate the time it takes for you to get to Mars.<h2>
 		<h2>All you have to do is type in how fast you are moving towards Mars (in km/h) and how far away you are from Mars (in km).<h2>
 	</div>
 		</section>
 	<section class= "calculatorsection">
 		<div class= "calculatorcontainer">
-		<div class= "calculator2">
 			<input id="text1" placeholder= "Current Speed(km/h)">
 			<input id="text2" placeholder= "Distance Remaining(km)">
 			<button class ="btn1" onclick="time()" id= "btn1">Calculate</button>
-		</div>
+			<div class = "displayresult">
+				<h3 id= "displayresulttext"></h3>
+			</div>
 		</div>
 	</section>
 

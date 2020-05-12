@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Food Calculator</title>
+	<meta charset="UTF-8" />
+	<meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+			<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+			<script src="https://kit.fontawesome.com/ef1c27da98.js" crossorigin="anonymous"></script>
+				<script src="scripts/main.js" defer></script>
+</head>
+<body>
+	<div class= "wrapper">
+		<header>
+			<div class= "logo">SPACEX ITSI</div>
+				<nav>
+					<ul>
+						<li><a href= "index.html">Home</a></li>
+						<li><a href= "TimeCalculator.html">Time Calculator</a></li>
+						<li><a href= "FoodCalculator.html" class="activepage">Food Calculator</a></li>
+						<li><a href= "Atmosphere.html">Atmosphere</a></li>
+					</ul>
+				</nav>
+					<div class= "menu-toggle"><i class="fas fa-bars"></i></div>
+		</header>
+	</div>
+	<section>
+		<section class= textcalculatorsection>
+	<div class= "timecalculatortext">
+		<h1>Food calculator</h1>
+		<h2> As you know you should eat a maximum of 1,8kg of food a day on the ship. With the calculator below you can calculate if you have to ration your food more so you can make it to Mars without starving.<h2>
+		<h2> All you have to do is type in how much food is left (in kg) and how much longer it takes to get to Mars (in Days).<h2>
+	</div>
+		</section>
+	<section class= "calculatorsection">
+		<div class= "calculatorcontainer">
+			<input id="textfood" placeholder= "Food left(kg)">
+			<input id="texttime" placeholder= "Time to Mars(Days)">
+			<button class ="btn2" onclick="food()" id= "btn2">Calculate</button>
+			<div class = "displayresult">
+				<h3 id= "displayresulttext2"></h3>
+			</div>
+		</div>
+	</section>
+
+</body>
+</html>
