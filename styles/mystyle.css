@@ -134,7 +134,7 @@ h3{
 	justify-content: center;
 	flex-direction: row;
 	align-items: center;
-	padding-bottom: 5rem;
+	padding-bottom: 12rem;
 
 }
 .calculatorcontainer{
@@ -159,6 +159,9 @@ input{
 	font-size: 1.2em;
 	margin: 4px 2px;
 	cursor: pointer;
+}
+.btn4{
+	margin-top: 50px;
 }
 .displayresult{
 	margin-top: 1rem;
