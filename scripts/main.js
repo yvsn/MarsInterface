@@ -19,7 +19,7 @@ if (foodcalc >= fooddaily) {
   document.getElementById("displayresulttext2").innerHTML = "You still have " + foodcalc + " kilogramm(s) of food per day left" + " (You don't have to ration your food).";
 }
 else{
-    document.getElementById("displayresulttext2").innerHTML = "You still have " + foodcalc + " kilogramm(s) of food per day left" + " (You have to ration your food).";
+    document.getElementById("displayresulttext2").innerHTML = "You only have " + foodcalc + " kilogramm(s) of food per day left" + " (You have to ration your food).";
 }
 }
 
